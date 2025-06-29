@@ -30,16 +30,27 @@ int main()
 		cin >> userGuess;
 
 		cout << endl;
-		guessCount++;
 
 		if (userGuess < 1 || userGuess > 100) {
 			cout << "You entered an invalid input. Please retry." << endl;
+			guessCount++;
 		}
-		else if(userGuess != randVal) {
-			cout << "Sorry. Incorrect guess! Try again." << endl;
+
+
+		/*Created a seperate conditional statement
+		* Now shows user if they guessed higher or lower than
+		* the random value.
+		*/
+		if (userGuess > randVal) {
+			cout << "Your guess was too high. Please retry." << endl;
+			guessCount++;
+		}
+		else if (userGuess < randVal) {
+			cout << "Your guess was too low. Please retry." << endl;
+			guessCount++;
 		}
 		else {
-			cout << "Congrats! You got the number in " << guessCount << " attempt(s)!" << endl;
+			cout << "Congrats. You guessed the number in " << guessCount << " attempt(s)!" << endl;
 			guessedNumber = true;
 		}
 	}
