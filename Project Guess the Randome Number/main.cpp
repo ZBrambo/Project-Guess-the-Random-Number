@@ -23,7 +23,7 @@ int main()
 	bool guessedNumber = false;
 
 	//If you wish to print the random value, uncomment line below
-	cout << randVal << endl;
+	//cout << randVal << endl;
 
 	while (!guessedNumber) {
 		cout << "Please enter in your guess(1-100): ";
