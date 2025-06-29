@@ -19,11 +19,11 @@ int main()
 
 	int randVal = (rand() % 100) + 1;
 	int guessCount = 0;
-	int userGuess;
+	int userGuess = 1;
 	bool guessedNumber = false;
 
 	//If you wish to print the random value, uncomment line below
-	//cout << randVal << endl;
+	cout << randVal << endl;
 
 	while (!guessedNumber) {
 		cout << "Please enter in your guess(1-100): ";
